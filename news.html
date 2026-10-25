@@ -1,8 +1,278 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Console updates, release announcements, studio stories and the headlines players are talking about."><title>Gaming News | PlayHub</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css"></head><body>
-<div class="topbar"><div class="wrap topbar-inner"><span>THE GAMING WORLD, ALL IN ONE PLACE</span><span>DISCOVER · READ · PLAY</span></div></div>
-<header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="PlayHub home"><span class="brand-icon">P<span>+</span></span><span class="brand-name">PlayHub<small>GAMES • NEWS • GUIDES</small></span></a><button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button><nav class="nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="games.html" >Discover Games</a><a href="news.html" >News</a><a href="reviews.html" >Reviews</a><a href="guides.html" >Guides & Videos</a><a href="vr-consoles.html" >Consoles & VR</a></nav><a class="header-wishlist" href="games.html#content-grid">♡ <span>Saved</span> <b id="saved-count">0</b></a></div></header>
-<main><div class="wrap"><section class="hero inner-hero">
-      <div class="hero-copy"><p class="eyebrow">PLAY MORE. FIND YOUR NEXT FAVORITE.</p><h1>Catch up on what matters in gaming.</h1><p>Console updates, release announcements, studio stories and the headlines players are talking about.</p><div class="hero-actions"><a class="btn btn-primary" href="games.html">Explore games</a><a class="plain-link" href="news.html">Latest gaming news <span>↗</span></a></div><div class="hero-pills"><span>PC</span><span>PlayStation</span><span>Xbox</span><span>Nintendo</span><span>VR</span></div></div>
-      <div class="hero-visual"><img src="assets/news.svg" alt="Original gaming-themed artwork"><div class="visual-caption"><span class="pulse"></span> YOUR NEXT SESSION STARTS HERE</div></div>
-    </section><section class="section"><div class="section-head"><div><p class="eyebrow">GAMING NEWS</p><h2>Latest stories</h2></div><p>Console updates, release announcements, studio stories and the headlines players are talking about.</p></div><div class="content-grid" id="content-grid"><article class="content-card" data-title="what to watch in the next console generation" data-genre="Console" data-platform="Console"><div class="card-img"><img src="assets/news.svg" alt="" loading="lazy"><span class="tag">Console</span></div><div class="content-body"><h3>What to watch in the next console generation</h3><p>Console updates, hardware trends and the features players want next.</p><div class="card-bottom"><span class="meta">NEWS</span><button class="save-btn" type="button" aria-pressed="false" data-save="What to watch in the next console generation">♡ Save</button></div></div></article><article class="content-card" data-title="the co-op games bringing friends together" data-genre="Features" data-platform="PC"><div class="card-img"><img src="assets/action.svg" alt="" loading="lazy"><span class="tag">Features</span></div><div class="content-body"><h3>The co-op games bringing friends together</h3><p>A look at the design choices that make shared adventures memorable.</p><div class="card-bottom"><span class="meta">NEWS</span><button class="save-btn" type="button" aria-pressed="false" data-save="The co-op games bringing friends together">♡ Save</button></div></div></article><article class="content-card" data-title="vr is more than a headset: the setup checklist" data-genre="VR" data-platform="VR"><div class="card-img"><img src="assets/vr.svg" alt="" loading="lazy"><span class="tag">VR</span></div><div class="content-body"><h3>VR is more than a headset: the setup checklist</h3><p>Comfort, room space and controls to consider before diving in.</p><div class="card-bottom"><span class="meta">NEWS</span><button class="save-btn" type="button" aria-pressed="false" data-save="VR is more than a headset: the setup checklist">♡ Save</button></div></div></article></div><p class="empty-state" id="empty-state" hidden>No matches found. Try another search or clear your filters.</p></section><section class="newsletter"><div><p class="eyebrow">THE PLAYER BRIEFING</p><h2>Get the good stuff. Skip the noise.</h2><p>A demo sign-up for gaming updates, new guides and picks.</p></div><form id="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" required placeholder="Email address"><button class="btn btn-primary">Sign me up</button><p id="newsletter-note" role="status"></p></form></section></div></main>
-<footer class="footer"><div class="wrap footer-main"><div><a class="brand brand-footer" href="index.html"><span class="brand-icon">P<span>+</span></span><span class="brand-name">PlayHub<small>GAMES • NEWS • GUIDES</small></span></a><p>A gaming website concept combining game discovery, editorial news, reviews and helpful guides.</p></div><div><h4>Explore</h4><a href="games.html">Discover Games</a><a href="news.html">Gaming News</a><a href="reviews.html">Reviews</a></div><div><h4>Play your way</h4><a href="guides.html">Guides & Videos</a><a href="vr-consoles.html">Consoles & VR</a><a href="games.html">Saved games</a></div><div><h4>Prototype note</h4><p>Sample content and artwork are included. No real store checkout, live news feed, accounts or external game database is connected.</p></div></div><div class="wrap footer-bottom"><span>© 2026 PlayHub — concept website</span><span>Original branding and demo artwork</span></div></footer><script src="assets/site.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="VRGameZ News - Console updates, release announcements, studio stories and the headlines players are talking about.">
+  <title>Gaming News | VRGameZ</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="VRGameZ home">
+        <img class="brand-logo" src="assets/logo.png" alt="VRGameZ">
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="games.html">Discover Games</a>
+        <a href="news.html" aria-current="page">News</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="guides.html">Guides &amp; Videos</a>
+        <a href="vr-consoles.html">Consoles &amp; VR</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero news-hero hero-editorial">
+        <div class="news-wire-strip">
+          <span class="wire-badge"><span class="pulse"></span> BREAKING WIRE</span>
+          <span class="wire-headline">PSVR2 PC Adapter 2.0 firmware update live • Unreal Engine 5.6 VR test builds
+            released • Holiday console drops locked</span>
+        </div>
+        <div class="editorial-grid">
+          <div class="editorial-copy">
+            <span class="editorial-tag">INDUSTRY DISPATCH • 3 MIN READ</span>
+            <h1>Catch up on what matters in gaming.</h1>
+            <p>Console updates, release announcements, studio stories and the headlines players are talking about.</p>
+            <!-- <div class="editorial-meta">
+              <span>By Marcus Vance</span>
+              <span class="meta-dot">•</span>
+              <span>Hardware Editor</span>
+              <span class="meta-dot">•</span>
+              <span>Updated Today</span>
+            </div> -->
+            <div class="editorial-actions">
+              <a class="btn btn-primary" href="#content-grid">Latest headlines</a>
+              <a class="btn btn-secondary" href="reviews.html">Browse reviews</a>
+            </div>
+          </div>
+          <div class="editorial-visual">
+            <div class="editorial-card">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80"
+                alt="Esports and gaming news" loading="eager">
+              <div class="editorial-overlay">
+                <span class="editorial-cat">HARDWARE ANALYSIS</span>
+                <h3 class="editorial-title">Next-Gen Silicon: How RDNA 4 and Custom ASICs Are Powering 144Hz VR</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">GAMING NEWS</p>
+            <h2>Latest stories</h2>
+          </div>
+          <p>Console updates, release announcements, studio stories and the headlines players are talking about.</p>
+        </div>
+
+        <div class="content-grid news-magazine-grid" id="content-grid">
+          <article class="content-card news-magazine-card" data-title="what to watch in the next console generation" data-genre="Console"
+            data-platform="Console">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80"
+                alt="Next Console Generation" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">Console • 4 Min Read</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">What to watch in the next console generation</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Console updates, hardware trends, RDNA 4 silicon architecture, and the features players want next.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">STAFF DISPATCH</span>
+              <button class="save-btn" type="button" aria-pressed="false"
+                data-save="What to watch in the next console generation">♡ Save</button>
+            </div>
+          </article>
+
+          <article class="content-card news-magazine-card" data-title="the co-op games bringing friends together" data-genre="Features"
+            data-platform="PC">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80"
+                alt="Co-op Gaming" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">Features • 6 Min Read</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">The co-op games bringing friends together</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">A comprehensive look at gameplay systems, shared progression, and cross-play mechanics that make co-op memorable.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">ANALYSIS</span>
+              <button class="save-btn" type="button" aria-pressed="false"
+                data-save="The co-op games bringing friends together">♡ Save</button>
+            </div>
+          </article>
+
+          <article class="content-card news-magazine-card" data-title="vr is more than a headset: the setup checklist" data-genre="VR"
+            data-platform="VR">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=800&q=80"
+                alt="VR Setup Checklist" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">VR Hardware • 5 Min Read</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">VR is more than a headset: the setup checklist</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Comfort considerations, room-scale boundaries, optical IPD calibration, and controller tracking to check before diving in.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">TECH INSIGHT</span>
+              <button class="save-btn" type="button" aria-pressed="false"
+                data-save="VR is more than a headset: the setup checklist">♡ Save</button>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" id="empty-state" hidden>No matches found. Try another search or clear your filters.</p>
+      </section>
+
+      <section class="news-deep-dive">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">EDITORIAL INVESTIGATION</p>
+            <h2>Weekly Tech Deep-Dive: Silicon &amp; Optics</h2>
+          </div>
+          <p>Exhaustive engineering teardowns of the silicon, spatial compute shaders, and micro-display technology defining tomorrow's gaming platforms.</p>
+        </div>
+        <div class="deep-dive-card">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Next-Gen Silicon Architecture" loading="lazy">
+          <div class="deep-dive-content">
+            <span class="deep-dive-pill">ENGINEERING ANALYSIS</span>
+            <h3>How Machine Learning Upscaling is Reshaping Mobile &amp; Tethered VR</h3>
+            <p>From Sony's PSSR tensor networks to Meta's on-device super resolution, machine learning temporal upscalers allow low-power chipsets to render sub-4K framebuffers while outputting crisp 120Hz native visuals without thermal throttling.</p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a class="btn btn-primary" href="vr-consoles.html">Read Full Teardown</a>
+              <a class="btn btn-secondary" href="reviews.html">View Benchmarks</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-wire">
+        <div class="news-wire-header">
+          <div>
+            <p class="eyebrow" style="text-align: left; margin-bottom: 6px;">DISPATCH FEED</p>
+            <h2>VRGameZ Live News Wire</h2>
+          </div>
+          <span class="live-pulse-badge"><span class="red-dot"></span> LIVE EDITORIAL FEED</span>
+        </div>
+        <div class="wire-timeline">
+          <div class="wire-item">
+            <div class="wire-meta">
+              <span>15:40 UTC</span>
+              <span class="wire-tag">HARDWARE</span>
+            </div>
+            <h3>Sony Confirms PSVR2 PC Adapter Driver Update with Full Eye-Tracking Support</h3>
+            <p>New SteamVR bridge update reduces display port latency by 18% and introduces dynamic foveated rendering
+              presets for compatible GPU rigs.</p>
+          </div>
+          <div class="wire-item">
+            <div class="wire-meta">
+              <span>12:15 UTC</span>
+              <span class="wire-tag">FIRMWARE</span>
+            </div>
+            <h3>Meta Quest v68 Rolling Out with Low-Latency Virtual Audio Spatialization</h3>
+            <p>Firmware brings native spatial acoustics to browser playback and reduces guardian redraw frequency during
+              fast 120Hz head turns.</p>
+          </div>
+          <div class="wire-item">
+            <div class="wire-meta">
+              <span>09:20 UTC</span>
+              <span class="wire-tag">STUDIOS</span>
+            </div>
+            <h3>Valve Patent Reveals Next-Gen Haptic Controllers with Force-Feedback Triggers</h3>
+            <p>Regulatory filings point toward magnetic thumbstick assemblies designed to permanently eliminate stick
+              drift across PCVR titles.</p>
+          </div>
+        </div>
+        <div class="news-wire-footer">
+          <a class="btn btn-primary" href="reviews.html">Explore Game Reviews</a>
+          <a class="btn btn-secondary" href="guides.html">View Technical Guides</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-main">
+      <div>
+        <a class="brand brand-footer" href="index.html" aria-label="VRGameZ home">
+          <img class="brand-logo brand-logo-footer" src="assets/logo.png" alt="VRGameZ">
+        </a>
+        <p>A next-gen gaming website concept combining VR &amp; console discovery, editorial news, reviews and helpful
+          guides.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="games.html">Discover Games</a>
+        <a href="news.html">Gaming News</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="guides.html">Guides &amp; Videos</a>
+        <a href="vr-consoles.html">Consoles &amp; VR</a>
+      </div>
+      <div>
+        <h4>Contact &amp; Newsletter</h4>
+        <div class="footer-contact-details">
+          <p class="footer-contact-item"><strong>Direct:</strong> <a href="mailto:contact@vrgamez.io" class="footer-email-link">contact@vrgamez.io</a></p>
+          <p class="footer-contact-item"><strong>Press:</strong> <a href="mailto:press@vrgamez.io" class="footer-email-link">press@vrgamez.io</a></p>
+          <p class="footer-contact-item"><strong>Hotline:</strong> <a href="tel:+14158904263" class="footer-phone-link">+1 (415) 890-4263</a></p>
+          <p class="footer-contact-item"><strong>Studio:</strong> San Francisco, CA &bull; Mon&ndash;Fri 9AM&ndash;6PM EST</p>
+        </div>
+        <form class="footer-newsletter-bar">
+          <input class="footer-email-input" type="email" required placeholder="Enter player email" aria-label="Player email address">
+          <button class="btn btn-secondary btn-sm" type="submit">Join</button>
+        </form>
+        <span class="footer-newsletter-status" role="status"></span>
+      </div>
+      <div>
+        <h4>Social Channels</h4>
+        <div class="footer-social-row">
+          <a class="social-btn" href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
+            <span class="social-icon">🎮</span> Discord
+          </a>
+          <a class="social-btn" href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch VRGameZ on YouTube">
+            <span class="social-icon">▶</span> YouTube
+          </a>
+          <a class="social-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow VRGameZ on X">
+            <span class="social-icon">𝕏</span> X (Twitter)
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© 2026 VRGameZ — concept website</span>
+      <span>Original branding and high-definition photography</span>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+
+</html>

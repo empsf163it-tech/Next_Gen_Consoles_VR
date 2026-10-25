@@ -1,8 +1,405 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A gaming hub for discovery, reviews, guides and console news."><title>Home | PlayHub</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css"></head><body>
-<div class="topbar"><div class="wrap topbar-inner"><span>THE GAMING WORLD, ALL IN ONE PLACE</span><span>DISCOVER · READ · PLAY</span></div></div>
-<header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="PlayHub home"><span class="brand-icon">P<span>+</span></span><span class="brand-name">PlayHub<small>GAMES • NEWS • GUIDES</small></span></a><button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button><nav class="nav" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="games.html" >Discover Games</a><a href="news.html" >News</a><a href="reviews.html" >Reviews</a><a href="guides.html" >Guides & Videos</a><a href="vr-consoles.html" >Consoles & VR</a></nav><a class="header-wishlist" href="games.html#content-grid">♡ <span>Saved</span> <b id="saved-count">0</b></a></div></header>
-<main><div class="wrap"><section class="hero home-hero">
-      <div class="hero-copy"><p class="eyebrow">PLAY MORE. FIND YOUR NEXT FAVORITE.</p><h1>Find your next favorite game.</h1><p>A gaming hub for discovery, reviews, guides and console news.</p><div class="hero-actions"><a class="btn btn-primary" href="games.html">Explore games</a><a class="plain-link" href="news.html">Latest gaming news <span>↗</span></a></div><div class="hero-pills"><span>PC</span><span>PlayStation</span><span>Xbox</span><span>Nintendo</span><span>VR</span></div></div>
-      <div class="hero-visual"><img src="assets/hero.svg" alt="Original gaming-themed artwork"><div class="visual-caption"><span class="pulse"></span> YOUR NEXT SESSION STARTS HERE</div></div>
-    </section><section class="section"><div class="section-head"><div><p class="eyebrow">THE PLAYHUB MIX</p><h2>Pick your next move</h2></div><p>Store-style discovery meets gaming journalism: browse games, catch up on news, and get help before the boss fight.</p></div><div class="feature-grid"><article class="feature-card"><a href="games.html" class="card-img"><img src="assets/action.svg" alt="" loading="lazy"></a><div class="feature-body"><h3><a href="games.html">Discover Games</a></h3><p>Search by genre and platform, then save the ones you want to try.</p><a class="plain-link" href="games.html">Explore <span>→</span></a></div></article><article class="feature-card"><a href="news.html" class="card-img"><img src="assets/news.svg" alt="" loading="lazy"></a><div class="feature-body"><h3><a href="news.html">Gaming News</a></h3><p>Stay in the loop with console updates and industry stories.</p><a class="plain-link" href="news.html">Explore <span>→</span></a></div></article><article class="feature-card"><a href="reviews.html" class="card-img"><img src="assets/rpg.svg" alt="" loading="lazy"></a><div class="feature-body"><h3><a href="reviews.html">Reviews</a></h3><p>Get a quick verdict before you spend your time or money.</p><a class="plain-link" href="reviews.html">Explore <span>→</span></a></div></article><article class="feature-card"><a href="guides.html" class="card-img"><img src="assets/guide.svg" alt="" loading="lazy"></a><div class="feature-body"><h3><a href="guides.html">Guides & Videos</a></h3><p>Tips, explainers and walkthrough-style help.</p><a class="plain-link" href="guides.html">Explore <span>→</span></a></div></article><article class="feature-card"><a href="vr-consoles.html" class="card-img"><img src="assets/vr.svg" alt="" loading="lazy"></a><div class="feature-body"><h3><a href="vr-consoles.html">Consoles & VR</a></h3><p>Compare play styles, console families and immersive gear.</p><a class="plain-link" href="vr-consoles.html">Explore <span>→</span></a></div></article></div></section><section class="dark-callout"><div><p class="eyebrow">BUILT FOR EVERY KIND OF PLAYER</p><h2>One place for what to play, what to read and what to try next.</h2><p>Save game ideas, filter the sample library and jump straight into the section you need.</p></div><a class="btn btn-light" href="games.html">Browse the library</a></section><section class="newsletter"><div><p class="eyebrow">THE PLAYER BRIEFING</p><h2>Get the good stuff. Skip the noise.</h2><p>A demo sign-up for gaming updates, new guides and picks.</p></div><form id="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" required placeholder="Email address"><button class="btn btn-primary">Sign me up</button><p id="newsletter-note" role="status"></p></form></section></div></main>
-<footer class="footer"><div class="wrap footer-main"><div><a class="brand brand-footer" href="index.html"><span class="brand-icon">P<span>+</span></span><span class="brand-name">PlayHub<small>GAMES • NEWS • GUIDES</small></span></a><p>A gaming website concept combining game discovery, editorial news, reviews and helpful guides.</p></div><div><h4>Explore</h4><a href="games.html">Discover Games</a><a href="news.html">Gaming News</a><a href="reviews.html">Reviews</a></div><div><h4>Play your way</h4><a href="guides.html">Guides & Videos</a><a href="vr-consoles.html">Consoles & VR</a><a href="games.html">Saved games</a></div><div><h4>Prototype note</h4><p>Sample content and artwork are included. No real store checkout, live news feed, accounts or external game database is connected.</p></div></div><div class="wrap footer-bottom"><span>© 2026 PlayHub — concept website</span><span>Original branding and demo artwork</span></div></footer><script src="assets/site.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VRGameZ - The ultimate gaming hub for VR discovery, reviews, guides, and console news.">
+  <title>Home | VRGameZ</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="VRGameZ home">
+        <img class="brand-logo" src="assets/logo.png" alt="VRGameZ">
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="games.html">Discover Games</a>
+        <a href="news.html">News</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="guides.html">Guides &amp; Videos</a>
+        <a href="vr-consoles.html">Consoles &amp; VR</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero home-hero hero-portal">
+        <div class="hero-copy portal-copy">
+          <div class="portal-badge"><span class="pulse"></span> LIVE GATEWAY • SYSTEM ONLINE</div>
+          <h1>Find your next favorite game.</h1>
+          <p>A next-generation gaming hub for VR discovery, in-depth reviews, expert guides, and console news.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="games.html">Explore games</a>
+            <a class="btn btn-secondary" href="news.html">Latest gaming news</a>
+          </div>
+          <div class="portal-hud">
+            <div class="hud-stat">
+              <span class="hud-num">120+</span>
+              <span class="hud-label">Curated Titles</span>
+            </div>
+            <div class="hud-stat">
+              <span class="hud-num">4K HDR</span>
+              <span class="hud-label">Tested Rigs</span>
+            </div>
+            <div class="hud-stat">
+              <span class="hud-num">24/7</span>
+              <span class="hud-label">Live Wire</span>
+            </div>
+          </div>
+        </div>
+        <div class="portal-visual-wrap">
+          <div class="portal-visual-card">
+            <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=1200&q=80" alt="VR gamer immersed in virtual reality experience" loading="eager">
+            <div class="portal-floating-chip">
+              <span class="chip-dot"></span> 98% IMMERSION SCORE
+            </div>
+            <div class="portal-caption-hud">
+              <div class="hud-live-tag"><span class="pulse"></span> SESSION ACTIVE</div>
+              <div class="hud-wave-bars">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">THE VRGAMEZ MIX</p>
+            <h2>Pick your next move</h2>
+          </div>
+          <p>Store-style discovery meets gaming journalism: browse games, catch up on news, and get help before the boss fight.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <a href="games.html" class="card-img">
+              <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80" alt="Discover Games" loading="lazy">
+            </a>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">GAME LIBRARY</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading"><a href="games.html">Discover Games</a></h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Search by genre and platform, filter by playtime, and save titles for your next gaming session.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="games.html">Explore Library</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <a href="news.html" class="card-img">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Gaming News" loading="lazy">
+            </a>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">DAILY WIRE</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading"><a href="news.html">Gaming News</a></h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Stay in the loop with next-gen console updates, developer roadmaps, and studio releases.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="news.html">Read Stories</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <a href="reviews.html" class="card-img">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Reviews" loading="lazy">
+            </a>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">VERDICTS</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading"><a href="reviews.html">Verified Reviews</a></h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Get transparent verdicts, lab-tested performance metrics, and advice before you invest.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="reviews.html">View Scorecards</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <a href="guides.html" class="card-img">
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Guides &amp; Videos" loading="lazy">
+            </a>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">MASTERCLASS</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading"><a href="guides.html">Guides &amp; Videos</a></h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Master setup hurdles, explore boss tactics, and optimize VR motion comfort for long runs.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="guides.html">Open Guides</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <a href="vr-consoles.html" class="card-img">
+              <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=800&q=80" alt="Consoles &amp; VR" loading="lazy">
+            </a>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">HARDWARE</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading"><a href="vr-consoles.html">Consoles &amp; VR</a></h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Compare platform tiers, silicon architecture, wireless headsets, and high-fidelity PCVR gear.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="vr-consoles.html">Compare Gear</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <a href="reviews.html" class="card-img">
+              <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=800&q=80" alt="Benchmark Lab" loading="lazy">
+            </a>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">BENCHMARKS</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading"><a href="reviews.html">Hardware Lab</a></h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Dive into lab testing metrics for optical FOV, panel contrast, latency, and refresh consistency.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="reviews.html">View Benchmarks</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-leaderboard">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">COMMUNITY BENCHMARKS</p>
+            <h2>Trending VR &amp; Console Leaderboard</h2>
+          </div>
+          <p>Real-time player sentiment scores and weekly engagement ranking across top next-gen titles.</p>
+        </div>
+        <div class="leaderboard-table">
+          <div class="leaderboard-row">
+            <span class="leaderboard-rank">#1</span>
+            <div class="leaderboard-title">
+              <strong>Into the Radius 2</strong>
+              <span>Tactical VR Extraction Sim • Unreal Engine 5</span>
+            </div>
+            <span class="leaderboard-platform">PCVR / Quest 3</span>
+            <span class="leaderboard-score">98% Positive</span>
+            <div class="leaderboard-action">
+              <a class="btn btn-secondary btn-sm" href="reviews.html">View Review</a>
+            </div>
+          </div>
+          <div class="leaderboard-row">
+            <span class="leaderboard-rank">#2</span>
+            <div class="leaderboard-title">
+              <strong>Gran Turismo 7 VR</strong>
+              <span>Full PSVR2 Sim Racing • DualSense Force Haptics</span>
+            </div>
+            <span class="leaderboard-platform">PS5 / PSVR2</span>
+            <span class="leaderboard-score">96% Positive</span>
+            <div class="leaderboard-action">
+              <a class="btn btn-secondary btn-sm" href="reviews.html">View Review</a>
+            </div>
+          </div>
+          <div class="leaderboard-row">
+            <span class="leaderboard-rank">#3</span>
+            <div class="leaderboard-title">
+              <strong>Cyberpunk 2077: Phantom Liberty</strong>
+              <span>Path Tracing Ultra • 4K 60FPS Fidelity Mode</span>
+            </div>
+            <span class="leaderboard-platform">PC / PS5 Pro</span>
+            <span class="leaderboard-score">95% Positive</span>
+            <div class="leaderboard-action">
+              <a class="btn btn-secondary btn-sm" href="games.html">View Game</a>
+            </div>
+          </div>
+          <div class="leaderboard-row">
+            <span class="leaderboard-rank">#4</span>
+            <div class="leaderboard-title">
+              <strong>Half-Life: Alyx</strong>
+              <span>Physics Masterpiece • SteamVR Benchmark</span>
+            </div>
+            <span class="leaderboard-platform">PCVR</span>
+            <span class="leaderboard-score">99% Positive</span>
+            <div class="leaderboard-action">
+              <a class="btn btn-secondary btn-sm" href="guides.html">View Guide</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-hardware-radar">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">HARDWARE INTELLIGENCE</p>
+            <h2>Ecosystem Radar &amp; Telemetry</h2>
+          </div>
+          <p>Live capability ratings across our core lab-tested gaming platforms.</p>
+        </div>
+        <div class="hardware-radar-grid">
+          <div class="radar-card">
+            <div class="radar-card-icon">⚡</div>
+            <h3>PS5 Pro</h3>
+            <p>PSSR Machine Learning upscale targeting 4K 60FPS with 28% faster memory bandwidth.</p>
+            <span class="radar-gauge-pill">16.7 TFLOPs GFX</span>
+          </div>
+          <div class="radar-card">
+            <div class="radar-card-icon">👓</div>
+            <h3>PSVR2</h3>
+            <p>OLED HDR micro-panels with gaze foveated rendering and motorized eye tracking.</p>
+            <span class="radar-gauge-pill">120Hz Low Latency</span>
+          </div>
+          <div class="radar-card">
+            <div class="radar-card-icon">🛰️</div>
+            <h3>Meta Quest 3</h3>
+            <p>Snapdragon XR2 Gen 2 standalone with pancake optical lenses and full color MR.</p>
+            <span class="radar-gauge-pill">Dual 4K+ Infinite</span>
+          </div>
+          <div class="radar-card">
+            <div class="radar-card-icon">🖥️</div>
+            <h3>PC Ultra Rig</h3>
+            <p>Custom watercooled RTX 4090 architecture for uncompromised wireless SteamVR.</p>
+            <span class="radar-gauge-pill">Native 144Hz Spec</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-community-reel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">COMMUNITY DISPATCH</p>
+            <h2>Player Insights &amp; Pro Tips</h2>
+          </div>
+          <p>Real community recommendations from competitive VR tournament players and console modders.</p>
+        </div>
+        <div class="community-reel-grid">
+          <div class="community-quote-card">
+            <p>"Locking 120Hz native refresh on PCVR eliminated motion blur entirely in Pavlov VR. It feels as natural as looking around a room."</p>
+            <div class="community-author">
+              <div class="author-avatar">AX</div>
+              <div class="author-info">
+                <strong>ApexVector</strong>
+                <span>Competitive VR Ace</span>
+              </div>
+            </div>
+          </div>
+          <div class="community-quote-card">
+            <p>"Upgrading to PS5 Pro gave Gran Turismo 7 in PSVR2 the sharpest cockpit details I've ever experienced in a racing simulation."</p>
+            <div class="community-author">
+              <div class="author-avatar">NL</div>
+              <div class="author-info">
+                <strong>NovaLap77</strong>
+                <span>Sim Racing Enthusiast</span>
+              </div>
+            </div>
+          </div>
+          <div class="community-quote-card">
+            <p>"The boss fight phase guide on VRGameZ saved me hours on Kingdoms of Ember. Positioning behind the pillar is 100% required."</p>
+            <div class="community-author">
+              <div class="author-avatar">SK</div>
+              <div class="author-info">
+                <strong>ShadowKnight</strong>
+                <span>RPG Platinum Hunter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-newsletter">
+        <p class="eyebrow">THE VRGAMEZ BRIEFING</p>
+        <h2>Never Miss A Game Drop Or Hardware Update</h2>
+        <p class="lead">Curated weekly breakdowns of new VR titles, PlayStation 5 firmware enhancements, PCVR mod releases, and exclusive editorial reviews delivered every Friday.</p>
+        <form class="newsletter-bar" id="newsletter-form">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" required placeholder="Enter your player email address">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-note" role="status"></p>
+        <div class="newsletter-proof">
+          <span>🎮 50,000+ Readers</span>
+          <span>⚡ No Spam, Ever</span>
+          <span>🔒 One-Click Unsubscribe</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-main">
+      <div>
+        <a class="brand brand-footer" href="index.html" aria-label="VRGameZ home">
+          <img class="brand-logo brand-logo-footer" src="assets/logo.png" alt="VRGameZ">
+        </a>
+        <p>A next-gen gaming website concept combining VR &amp; console discovery, editorial news, reviews and helpful guides.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="games.html">Discover Games</a>
+        <a href="news.html">Gaming News</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="guides.html">Guides &amp; Videos</a>
+        <a href="vr-consoles.html">Consoles &amp; VR</a>
+      </div>
+      <div>
+        <h4>Contact &amp; Newsletter</h4>
+        <div class="footer-contact-details">
+          <p class="footer-contact-item"><strong>Direct:</strong> <a href="mailto:contact@vrgamez.io" class="footer-email-link">contact@vrgamez.io</a></p>
+          <p class="footer-contact-item"><strong>Press:</strong> <a href="mailto:press@vrgamez.io" class="footer-email-link">press@vrgamez.io</a></p>
+          <p class="footer-contact-item"><strong>Hotline:</strong> <a href="tel:+14158904263" class="footer-phone-link">+1 (415) 890-4263</a></p>
+          <p class="footer-contact-item"><strong>Studio:</strong> San Francisco, CA &bull; Mon&ndash;Fri 9AM&ndash;6PM EST</p>
+        </div>
+        <form class="footer-newsletter-bar">
+          <input class="footer-email-input" type="email" required placeholder="Enter player email" aria-label="Player email address">
+          <button class="btn btn-secondary btn-sm" type="submit">Join</button>
+        </form>
+        <span class="footer-newsletter-status" role="status"></span>
+      </div>
+      <div>
+        <h4>Social Channels</h4>
+        <div class="footer-social-row">
+          <a class="social-btn" href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
+            <span class="social-icon">🎮</span> Discord
+          </a>
+          <a class="social-btn" href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch VRGameZ on YouTube">
+            <span class="social-icon">▶</span> YouTube
+          </a>
+          <a class="social-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow VRGameZ on X">
+            <span class="social-icon">𝕏</span> X (Twitter)
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© 2026 VRGameZ — concept website</span>
+      <span>Original branding and high-definition photography</span>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,8 +1,339 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Straightforward review cards, quick verdicts and buying advice to help you decide what deserves your time."><title>Reviews | PlayHub</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css"></head><body>
-<div class="topbar"><div class="wrap topbar-inner"><span>THE GAMING WORLD, ALL IN ONE PLACE</span><span>DISCOVER · READ · PLAY</span></div></div>
-<header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="PlayHub home"><span class="brand-icon">P<span>+</span></span><span class="brand-name">PlayHub<small>GAMES • NEWS • GUIDES</small></span></a><button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button><nav class="nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="games.html" >Discover Games</a><a href="news.html" >News</a><a href="reviews.html" aria-current="page">Reviews</a><a href="guides.html" >Guides & Videos</a><a href="vr-consoles.html" >Consoles & VR</a></nav><a class="header-wishlist" href="games.html#content-grid">♡ <span>Saved</span> <b id="saved-count">0</b></a></div></header>
-<main><div class="wrap"><section class="hero inner-hero">
-      <div class="hero-copy"><p class="eyebrow">PLAY MORE. FIND YOUR NEXT FAVORITE.</p><h1>Know before you play.</h1><p>Straightforward review cards, quick verdicts and buying advice to help you decide what deserves your time.</p><div class="hero-actions"><a class="btn btn-primary" href="games.html">Explore games</a><a class="plain-link" href="news.html">Latest gaming news <span>↗</span></a></div><div class="hero-pills"><span>PC</span><span>PlayStation</span><span>Xbox</span><span>Nintendo</span><span>VR</span></div></div>
-      <div class="hero-visual"><img src="assets/rpg.svg" alt="Original gaming-themed artwork"><div class="visual-caption"><span class="pulse"></span> YOUR NEXT SESSION STARTS HERE</div></div>
-    </section><section class="section"><div class="section-head"><div><p class="eyebrow">REVIEWS</p><h2>Fresh perspectives</h2></div><p>Straightforward review cards, quick verdicts and buying advice to help you decide what deserves your time.</p></div><div class="content-grid" id="content-grid"><article class="content-card" data-title="starfall protocol" data-genre="Action" data-platform="PC"><div class="card-img"><img src="assets/action.svg" alt="" loading="lazy"><span class="tag">Action</span></div><div class="content-body"><h3>Starfall Protocol</h3><p>A confident sci-fi action concept with fast combat and a cinematic world.</p><div class="card-bottom"><span class="meta">REVIEW</span><button class="save-btn" type="button" aria-pressed="false" data-save="Starfall Protocol">♡ Save</button></div></div></article><article class="content-card" data-title="kingdoms of ember" data-genre="RPG" data-platform="PC"><div class="card-img"><img src="assets/rpg.svg" alt="" loading="lazy"><span class="tag">RPG</span></div><div class="content-body"><h3>Kingdoms of Ember</h3><p>A fantasy adventure built around exploration, character builds and big choices.</p><div class="card-bottom"><span class="meta">REVIEW</span><button class="save-btn" type="button" aria-pressed="false" data-save="Kingdoms of Ember">♡ Save</button></div></div></article><article class="content-card" data-title="velocity district" data-genre="Racing" data-platform="PC"><div class="card-img"><img src="assets/racing.svg" alt="" loading="lazy"><span class="tag">Racing</span></div><div class="content-body"><h3>Velocity District</h3><p>A high-speed racer with a neon visual style and an arcade-first feel.</p><div class="card-bottom"><span class="meta">REVIEW</span><button class="save-btn" type="button" aria-pressed="false" data-save="Velocity District">♡ Save</button></div></div></article></div><p class="empty-state" id="empty-state" hidden>No matches found. Try another search or clear your filters.</p></section><section class="newsletter"><div><p class="eyebrow">THE PLAYER BRIEFING</p><h2>Get the good stuff. Skip the noise.</h2><p>A demo sign-up for gaming updates, new guides and picks.</p></div><form id="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" required placeholder="Email address"><button class="btn btn-primary">Sign me up</button><p id="newsletter-note" role="status"></p></form></section></div></main>
-<footer class="footer"><div class="wrap footer-main"><div><a class="brand brand-footer" href="index.html"><span class="brand-icon">P<span>+</span></span><span class="brand-name">PlayHub<small>GAMES • NEWS • GUIDES</small></span></a><p>A gaming website concept combining game discovery, editorial news, reviews and helpful guides.</p></div><div><h4>Explore</h4><a href="games.html">Discover Games</a><a href="news.html">Gaming News</a><a href="reviews.html">Reviews</a></div><div><h4>Play your way</h4><a href="guides.html">Guides & Videos</a><a href="vr-consoles.html">Consoles & VR</a><a href="games.html">Saved games</a></div><div><h4>Prototype note</h4><p>Sample content and artwork are included. No real store checkout, live news feed, accounts or external game database is connected.</p></div></div><div class="wrap footer-bottom"><span>© 2026 PlayHub — concept website</span><span>Original branding and demo artwork</span></div></footer><script src="assets/site.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VRGameZ Reviews - Straightforward review cards, quick verdicts and buying advice to help you decide what deserves your time.">
+  <title>Reviews | VRGameZ</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="VRGameZ home">
+        <img class="brand-logo" src="assets/logo.png" alt="VRGameZ">
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="games.html">Discover Games</a>
+        <a href="news.html">News</a>
+        <a href="reviews.html" aria-current="page">Reviews</a>
+        <a href="guides.html">Guides &amp; Videos</a>
+        <a href="vr-consoles.html">Consoles &amp; VR</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero reviews-hero hero-review-spotlight">
+        <div class="review-copy">
+          <div class="review-status-chip"><span class="chip-star">★</span> INDEPENDENT HARDWARE LAB</div>
+          <h1>Know before you play.</h1>
+          <p>Zero sponsored fluff. Rigorous latency audits, framerate stability tests, and definitive buy-or-skip verdicts on every title.</p>
+          <div class="review-actions">
+            <a class="btn btn-primary" href="#content-grid">Latest reviews</a>
+            <a class="btn btn-secondary" href="games.html">Discover games</a>
+          </div>
+          <div class="review-telemetry-row">
+            <div class="telemetry-pill">
+              <span class="telemetry-label">PS5 Pro</span>
+              <span class="telemetry-val">60 FPS Locked</span>
+            </div>
+            <div class="telemetry-pill">
+              <span class="telemetry-label">PSVR2</span>
+              <span class="telemetry-val">120Hz Verified</span>
+            </div>
+            <div class="telemetry-pill">
+              <span class="telemetry-label">PC Ultra</span>
+              <span class="telemetry-val">4K HDR Ready</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-showcase">
+          <div class="review-cinematic-card">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80" alt="Game reviews and consoles" loading="eager">
+            <div class="review-score-badge">
+              <span class="score-big">9.5</span>
+              <span class="score-sub">EXCEPTIONAL</span>
+            </div>
+            <div class="review-card-overlay">
+              <div class="review-award-tag"><span class="award-star">★</span> EDITOR'S CHOICE GOLD AWARD</div>
+              <h3 class="review-card-title">Next-Gen VR &amp; Console Performance Roundup</h3>
+              <div class="review-meta-bar">
+                <span>Stability: 98%</span>
+                <span class="meta-sep">•</span>
+                <span>Clarity: 9.6</span>
+                <span class="meta-sep">•</span>
+                <span>Latency: 1.2ms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">REVIEWS</p>
+            <h2>Fresh perspectives</h2>
+          </div>
+          <p>Straightforward review cards, quick verdicts and buying advice to help you decide what deserves your time.</p>
+        </div>
+
+        <div class="content-grid reviews-scorecard-grid" id="content-grid">
+          <article class="content-card review-card-modern" data-title="starfall protocol" data-genre="Action" data-platform="PC">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80" alt="Starfall Protocol" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">Action • Verified Score: 9.2</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Starfall Protocol</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">A confident sci-fi action concept with locked 60FPS combat, dual-trigger resistance, and crisp visuals.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">VERIFIED REVIEW</span>
+              <button class="save-btn" type="button" aria-pressed="false" data-save="Starfall Protocol">♡ Save</button>
+            </div>
+          </article>
+
+          <article class="content-card review-card-modern" data-title="kingdoms of ember" data-genre="RPG" data-platform="PC">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80" alt="Kingdoms of Ember" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">RPG • Verified Score: 8.9</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Kingdoms of Ember</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">A dark fantasy adventure with deep lore, expansive character progression, and full ray-traced shadows.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">VERIFIED REVIEW</span>
+              <button class="save-btn" type="button" aria-pressed="false" data-save="Kingdoms of Ember">♡ Save</button>
+            </div>
+          </article>
+
+          <article class="content-card review-card-modern" data-title="velocity district" data-genre="Racing" data-platform="PC">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Velocity District" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">Racing • Verified Score: 9.0</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Velocity District</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">A high-speed neon arcade racer with responsive direct-drive wheel support and a buttery 120Hz performance target.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">VERIFIED REVIEW</span>
+              <button class="save-btn" type="button" aria-pressed="false" data-save="Velocity District">♡ Save</button>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" id="empty-state" hidden>No matches found. Try another search or clear your filters.</p>
+      </section>
+
+      <section class="reviews-hall-of-fame">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">HALL OF FAME</p>
+            <h2>The Gold Standard: All-Time Essentials</h2>
+          </div>
+          <p>The highest-scoring hardware and landmark releases awarded the prestigious VRGameZ Gold Plaque.</p>
+        </div>
+        <div class="hall-of-fame-grid">
+          <div class="hall-fame-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=800&q=80" alt="Half-Life Alyx Hall of Fame" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">🏆 HALL OF FAME • 9.9 / 10</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Half-Life: Alyx</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Unmatched environmental physics, masterclass level pacing, and the benchmark by which all virtual reality storytelling is judged.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="games.html">Explore Game</a>
+            </div>
+          </div>
+          <div class="hall-fame-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="PlayStation VR2 Horizon" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">🏆 HALL OF FAME • 9.6 / 10</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Horizon: Call of the Mountain</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Showstopping OLED HDR color reproduction, motorized headset rumble, and tactile archery simulation on PS5.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="vr-consoles.html">Hardware Deep Dive</a>
+            </div>
+          </div>
+          <div class="hall-fame-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Gran Turismo 7 VR" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">🏆 HALL OF FAME • 9.7 / 10</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Gran Turismo 7 (PSVR2)</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">The definitive automotive simulator with 1:1 interior scale, dynamic weather lighting, and foveated frame rendering.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="guides.html">View Wheel Setup</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benchmark-matrix">
+        <div class="benchmark-head">
+          <p class="eyebrow">LAB BENCHMARK MATRIX</p>
+          <h2>2026 Headset &amp; Console Performance Index</h2>
+          <p>Real-world testing metrics for visual fidelity, FOV clarity, and motion comfort across leading hardware platforms.</p>
+        </div>
+        <div class="benchmark-table-wrapper">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th>Platform / Hardware</th>
+                <th>Display Panel</th>
+                <th>FOV &amp; Lenses</th>
+                <th>Refresh Target</th>
+                <th>Comfort Rating</th>
+                <th>Overall Index</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>PlayStation VR2</strong></td>
+                <td>Dual OLED (2000×2040)</td>
+                <td>110° Fresnel HDR</td>
+                <td>90Hz / 120Hz</td>
+                <td>
+                  <span class="meter-bar"><span class="meter-fill" style="width: 88%;"></span></span> 8.8
+                </td>
+                <td><span class="score-pill">9.1 / 10</span></td>
+              </tr>
+              <tr>
+                <td><strong>Meta Quest 3</strong></td>
+                <td>4K+ Infinite Dual LCD</td>
+                <td>110° Pancake Lenses</td>
+                <td>90Hz / 120Hz</td>
+                <td>
+                  <span class="meter-bar"><span class="meter-fill" style="width: 92%;"></span></span> 9.2
+                </td>
+                <td><span class="score-pill">9.3 / 10</span></td>
+              </tr>
+              <tr>
+                <td><strong>PlayStation 5 Pro</strong></td>
+                <td>PSSR 4K Ray Tracing</td>
+                <td>Variable Refresh HDMI 2.1</td>
+                <td>60fps / 120fps</td>
+                <td>
+                  <span class="meter-bar"><span class="meter-fill" style="width: 95%;"></span></span> 9.5
+                </td>
+                <td><span class="score-pill">9.4 / 10</span></td>
+              </tr>
+              <tr>
+                <td><strong>PCVR Enthusiast Rig</strong></td>
+                <td>Micro-OLED Custom</td>
+                <td>115° Edge-to-Edge</td>
+                <td>120Hz / 144Hz Native</td>
+                <td>
+                  <span class="meter-bar"><span class="meter-fill" style="width: 96%;"></span></span> 9.6
+                </td>
+                <td><span class="score-pill">9.7 / 10</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="benchmark-actions">
+          <a class="btn btn-primary" href="games.html">Browse Top Games</a>
+          <a class="btn btn-secondary" href="vr-consoles.html">Compare Hardware Setups</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-main">
+      <div>
+        <a class="brand brand-footer" href="index.html" aria-label="VRGameZ home">
+          <img class="brand-logo brand-logo-footer" src="assets/logo.png" alt="VRGameZ">
+        </a>
+        <p>A next-gen gaming website concept combining VR &amp; console discovery, editorial news, reviews and helpful guides.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="games.html">Discover Games</a>
+        <a href="news.html">Gaming News</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="guides.html">Guides &amp; Videos</a>
+        <a href="vr-consoles.html">Consoles &amp; VR</a>
+      </div>
+      <div>
+        <h4>Contact &amp; Newsletter</h4>
+        <div class="footer-contact-details">
+          <p class="footer-contact-item"><strong>Direct:</strong> <a href="mailto:contact@vrgamez.io" class="footer-email-link">contact@vrgamez.io</a></p>
+          <p class="footer-contact-item"><strong>Press:</strong> <a href="mailto:press@vrgamez.io" class="footer-email-link">press@vrgamez.io</a></p>
+          <p class="footer-contact-item"><strong>Hotline:</strong> <a href="tel:+14158904263" class="footer-phone-link">+1 (415) 890-4263</a></p>
+          <p class="footer-contact-item"><strong>Studio:</strong> San Francisco, CA &bull; Mon&ndash;Fri 9AM&ndash;6PM EST</p>
+        </div>
+        <form class="footer-newsletter-bar">
+          <input class="footer-email-input" type="email" required placeholder="Enter player email" aria-label="Player email address">
+          <button class="btn btn-secondary btn-sm" type="submit">Join</button>
+        </form>
+        <span class="footer-newsletter-status" role="status"></span>
+      </div>
+      <div>
+        <h4>Social Channels</h4>
+        <div class="footer-social-row">
+          <a class="social-btn" href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
+            <span class="social-icon">🎮</span> Discord
+          </a>
+          <a class="social-btn" href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch VRGameZ on YouTube">
+            <span class="social-icon">▶</span> YouTube
+          </a>
+          <a class="social-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow VRGameZ on X">
+            <span class="social-icon">𝕏</span> X (Twitter)
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© 2026 VRGameZ — concept website</span>
+      <span>Original branding and high-definition photography</span>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

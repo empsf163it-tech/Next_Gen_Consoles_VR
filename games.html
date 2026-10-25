@@ -1,8 +1,423 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Browse a sample library by platform, genre and play style. Search, filter and save favorites to your wishlist."><title>Discover Games | PlayHub</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css"></head><body>
-<div class="topbar"><div class="wrap topbar-inner"><span>THE GAMING WORLD, ALL IN ONE PLACE</span><span>DISCOVER · READ · PLAY</span></div></div>
-<header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="PlayHub home"><span class="brand-icon">P<span>+</span></span><span class="brand-name">PlayHub<small>GAMES • NEWS • GUIDES</small></span></a><button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button><nav class="nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="games.html" aria-current="page">Discover Games</a><a href="news.html" >News</a><a href="reviews.html" >Reviews</a><a href="guides.html" >Guides & Videos</a><a href="vr-consoles.html" >Consoles & VR</a></nav><a class="header-wishlist" href="games.html#content-grid">♡ <span>Saved</span> <b id="saved-count">0</b></a></div></header>
-<main><div class="wrap"><section class="hero inner-hero">
-      <div class="hero-copy"><p class="eyebrow">PLAY MORE. FIND YOUR NEXT FAVORITE.</p><h1>Find a game worth getting lost in.</h1><p>Browse a sample library by platform, genre and play style. Search, filter and save favorites to your wishlist.</p><div class="hero-actions"><a class="btn btn-primary" href="games.html">Explore games</a><a class="plain-link" href="news.html">Latest gaming news <span>↗</span></a></div><div class="hero-pills"><span>PC</span><span>PlayStation</span><span>Xbox</span><span>Nintendo</span><span>VR</span></div></div>
-      <div class="hero-visual"><img src="assets/action.svg" alt="Original gaming-themed artwork"><div class="visual-caption"><span class="pulse"></span> YOUR NEXT SESSION STARTS HERE</div></div>
-    </section><section class="section"><div class="section-head"><div><p class="eyebrow">BROWSE THE LIBRARY</p><h2>Games to explore</h2></div><p>Use search and filters to find the kind of game you feel like playing.</p></div><div class="filter-bar"><label class="search-box"><span>⌕</span><input id="game-search" type="search" placeholder="Search games..." aria-label="Search games"></label><select id="genre-filter" aria-label="Filter by genre"><option value="all">All genres</option><option>Action</option><option>RPG</option><option>Racing</option><option>VR</option><option>Adventure</option></select><select id="platform-filter" aria-label="Filter by platform"><option value="all">All platforms</option><option>PC</option><option>Console</option><option>VR</option></select><button class="btn btn-outline" id="clear-filters">Clear filters</button></div><div class="library-note"><span id="result-count">6 games</span><span>Sample titles for the website prototype</span></div><div class="content-grid" id="content-grid"><article class="content-card" data-title="starfall protocol" data-genre="Action" data-platform="Console"><div class="card-img"><img src="assets/action.svg" alt="" loading="lazy"><span class="tag">Action</span></div><div class="content-body"><h3>Starfall Protocol</h3><p>Sci-fi action • PC / Console</p><div class="card-bottom"><span class="meta">GAME PICK</span><button class="save-btn" type="button" aria-pressed="false" data-save="Starfall Protocol">♡ Save</button></div></div></article><article class="content-card" data-title="kingdoms of ember" data-genre="RPG" data-platform="Console"><div class="card-img"><img src="assets/rpg.svg" alt="" loading="lazy"><span class="tag">RPG</span></div><div class="content-body"><h3>Kingdoms of Ember</h3><p>Fantasy RPG • PC / Console</p><div class="card-bottom"><span class="meta">GAME PICK</span><button class="save-btn" type="button" aria-pressed="false" data-save="Kingdoms of Ember">♡ Save</button></div></div></article><article class="content-card" data-title="velocity district" data-genre="Racing" data-platform="Console"><div class="card-img"><img src="assets/racing.svg" alt="" loading="lazy"><span class="tag">Racing</span></div><div class="content-body"><h3>Velocity District</h3><p>Racing • Console / PC</p><div class="card-bottom"><span class="meta">GAME PICK</span><button class="save-btn" type="button" aria-pressed="false" data-save="Velocity District">♡ Save</button></div></div></article><article class="content-card" data-title="beyond the visor" data-genre="VR" data-platform="VR"><div class="card-img"><img src="assets/vr.svg" alt="" loading="lazy"><span class="tag">VR</span></div><div class="content-body"><h3>Beyond the Visor</h3><p>VR adventure • VR</p><div class="card-bottom"><span class="meta">GAME PICK</span><button class="save-btn" type="button" aria-pressed="false" data-save="Beyond the Visor">♡ Save</button></div></div></article><article class="content-card" data-title="neon frontier" data-genre="Action" data-platform="Console"><div class="card-img"><img src="assets/action.svg" alt="" loading="lazy"><span class="tag">Action</span></div><div class="content-body"><h3>Neon Frontier</h3><p>Co-op shooter • PC / Console</p><div class="card-bottom"><span class="meta">GAME PICK</span><button class="save-btn" type="button" aria-pressed="false" data-save="Neon Frontier">♡ Save</button></div></div></article><article class="content-card" data-title="quiet orbit" data-genre="Adventure" data-platform="PC"><div class="card-img"><img src="assets/rpg.svg" alt="" loading="lazy"><span class="tag">Adventure</span></div><div class="content-body"><h3>Quiet Orbit</h3><p>Story-rich exploration • PC</p><div class="card-bottom"><span class="meta">GAME PICK</span><button class="save-btn" type="button" aria-pressed="false" data-save="Quiet Orbit">♡ Save</button></div></div></article></div><p class="empty-state" id="empty-state" hidden>No matches found. Try another search or clear your filters.</p></section><section class="mini-callout"><div><p class="eyebrow">KEEP IT FOR LATER</p><h2>Your saved list, your next session.</h2><p>Use the Save buttons on cards to build a local wishlist. It stays in this browser on this device.</p></div><a class="btn btn-primary" href="reviews.html">Read reviews</a></section><section class="newsletter"><div><p class="eyebrow">THE PLAYER BRIEFING</p><h2>Get the good stuff. Skip the noise.</h2><p>A demo sign-up for gaming updates, new guides and picks.</p></div><form id="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" required placeholder="Email address"><button class="btn btn-primary">Sign me up</button><p id="newsletter-note" role="status"></p></form></section></div></main>
-<footer class="footer"><div class="wrap footer-main"><div><a class="brand brand-footer" href="index.html"><span class="brand-icon">P<span>+</span></span><span class="brand-name">PlayHub<small>GAMES • NEWS • GUIDES</small></span></a><p>A gaming website concept combining game discovery, editorial news, reviews and helpful guides.</p></div><div><h4>Explore</h4><a href="games.html">Discover Games</a><a href="news.html">Gaming News</a><a href="reviews.html">Reviews</a></div><div><h4>Play your way</h4><a href="guides.html">Guides & Videos</a><a href="vr-consoles.html">Consoles & VR</a><a href="games.html">Saved games</a></div><div><h4>Prototype note</h4><p>Sample content and artwork are included. No real store checkout, live news feed, accounts or external game database is connected.</p></div></div><div class="wrap footer-bottom"><span>© 2026 PlayHub — concept website</span><span>Original branding and demo artwork</span></div></footer><script src="assets/site.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the VRGameZ library by platform, genre and play style. Search, filter and save favorites to your wishlist.">
+  <title>Discover Games | VRGameZ</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="VRGameZ home">
+        <img class="brand-logo" src="assets/logo.png" alt="VRGameZ">
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="games.html" aria-current="page">Discover Games</a>
+        <a href="news.html">News</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="guides.html">Guides &amp; Videos</a>
+        <a href="vr-consoles.html">Consoles &amp; VR</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero games-hero hero-bento">
+        <div class="bento-copy">
+          <span class="bento-tag">LIBRARY REPERTORY</span>
+          <h1>Find a game worth getting lost in.</h1>
+          <p>Browse our curated library by platform, genre and play style. Search, filter and find titles ready for your next session.</p>
+          <div class="bento-actions">
+            <a class="btn btn-primary" href="#content-grid">Filter games</a>
+            <a class="btn btn-secondary" href="news.html">Latest gaming news</a>
+          </div>
+          <div class="bento-quick-genres">
+            <span class="genre-pill">VR Exclusive</span>
+            <span class="genre-pill">Action / RPG</span>
+            <span class="genre-pill">Cyberpunk</span>
+            <span class="genre-pill">Simulation</span>
+          </div>
+        </div>
+        <div class="bento-showcase">
+          <div class="bento-card-main">
+            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80" alt="Cyberpunk gaming experience" loading="eager">
+            <div class="bento-card-badge">★ 9.6 MASTERPIECE</div>
+            <div class="bento-card-title">CYBER HORIZON: ZERO LIMIT</div>
+          </div>
+          <div class="bento-card-sub">
+            <div class="bento-sub-icon">✦</div>
+            <div class="bento-sub-text">
+              <strong>VR Co-Op Trending</strong>
+              <span>120 FPS High-Fidelity Verified</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">BROWSE THE LIBRARY</p>
+            <h2>Games to explore</h2>
+          </div>
+          <p>Use search and filters to find the kind of game you feel like playing.</p>
+        </div>
+
+        <div class="filter-bar">
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="game-search" type="search" placeholder="Search games..." aria-label="Search games">
+          </label>
+          <select id="genre-filter" aria-label="Filter by genre">
+            <option value="all">All genres</option>
+            <option>Action</option>
+            <option>RPG</option>
+            <option>Racing</option>
+            <option>VR</option>
+            <option>Adventure</option>
+          </select>
+          <select id="platform-filter" aria-label="Filter by platform">
+            <option value="all">All platforms</option>
+            <option>PC</option>
+            <option>Console</option>
+            <option>VR</option>
+          </select>
+          <button class="btn btn-outline" id="clear-filters">Clear filters</button>
+        </div>
+
+        <div class="library-note">
+          <span id="result-count">6 games</span>
+          <span>Sample titles for the VRGameZ library</span>
+        </div>
+
+        <div class="content-grid games-catalog-grid" id="content-grid">
+          <article class="content-card game-catalog-card" data-title="starfall protocol" data-genre="Action" data-platform="Console">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80" alt="Starfall Protocol" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">Action • Console / PC • ~40h</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Starfall Protocol</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">A confident sci-fi action concept with high-speed tactical combat, 60FPS lock, and cinematic worlds.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">VERIFIED 60FPS</span>
+              <button class="save-btn" type="button" aria-pressed="false" data-save="Starfall Protocol">♡ Save</button>
+            </div>
+          </article>
+
+          <article class="content-card game-catalog-card" data-title="kingdoms of ember" data-genre="RPG" data-platform="Console">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80" alt="Kingdoms of Ember" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">RPG • Console / PC • ~85h</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Kingdoms of Ember</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">A dark fantasy adventure built around deep exploration, massive skill trees, and real-time ray tracing.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">RAY TRACED</span>
+              <button class="save-btn" type="button" aria-pressed="false" data-save="Kingdoms of Ember">♡ Save</button>
+            </div>
+          </article>
+
+          <article class="content-card game-catalog-card" data-title="velocity district" data-genre="Racing" data-platform="Console">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Velocity District" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">Racing • Console / PC • ~30h</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Velocity District</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">A high-octane neon circuit racer with direct-drive wheel support and a butter-smooth 120Hz display target.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">120HZ TARGET</span>
+              <button class="save-btn" type="button" aria-pressed="false" data-save="Velocity District">♡ Save</button>
+            </div>
+          </article>
+
+          <article class="content-card game-catalog-card" data-title="beyond the visor" data-genre="VR" data-platform="VR">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=800&q=80" alt="Beyond the Visor" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">VR • Standalone / PCVR • ~25h</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Beyond the Visor</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">An atmospheric spatial mystery with full 6DoF hand manipulation and gaze-foveated OLED micro-rendering.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">FOVEATED OLED</span>
+              <button class="save-btn" type="button" aria-pressed="false" data-save="Beyond the Visor">♡ Save</button>
+            </div>
+          </article>
+
+          <article class="content-card game-catalog-card" data-title="neon frontier" data-genre="Action" data-platform="Console">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80" alt="Neon Frontier" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">Action • Console / PC • ~50h</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Neon Frontier</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Tactical 4-player cooperative cyberpunk raid shooter with DLSS frame generation and synchronized team abilities.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">ULTRA 4K DLSS</span>
+              <button class="save-btn" type="button" aria-pressed="false" data-save="Neon Frontier">♡ Save</button>
+            </div>
+          </article>
+
+          <article class="content-card game-catalog-card" data-title="quiet orbit" data-genre="Adventure" data-platform="PC">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80" alt="Quiet Orbit" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">Adventure • PC Platform • ~18h</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Quiet Orbit</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Story-rich zero-gravity exploration of an abandoned deep-space station with binaural spatial audio design.</p>
+            </div>
+            <div class="card-bottom">
+              <span class="meta">ATMOSPHERIC</span>
+              <button class="save-btn" type="button" aria-pressed="false" data-save="Quiet Orbit">♡ Save</button>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" id="empty-state" hidden>No matches found. Try another search or clear your filters.</p>
+      </section>
+
+      <section class="games-curated-playlists">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">EDITORIAL SELECTIONS</p>
+            <h2>Curated Playlists &amp; Starter Packs</h2>
+          </div>
+          <p>Hand-crafted thematic collections tailored for your hardware setup and weekend gaming moods.</p>
+        </div>
+        <div class="playlist-grid">
+          <div class="playlist-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=800&q=80" alt="Adrenaline VR Collection" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">VR IMMERSION</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Adrenaline VR Essentials</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Top motion-intense VR simulators designed to test spatial reflexes with full 6DoF physical tracking.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="guides.html">View Setup Guide</a>
+            </div>
+          </div>
+          <div class="playlist-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80" alt="Cyber Open-Worlds" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">OPEN WORLD RPG</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Cyber Horizons &amp; Fantasy</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">100+ hour sprawling campaign adventures with ray-traced lighting and dynamic NPC factions.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="reviews.html">Explore Reviews</a>
+            </div>
+          </div>
+          <div class="playlist-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Precision Sim Racing" loading="lazy">
+            </div>
+            <div class="card-eyebrow-row">
+              <span class="card-eyebrow">COMPETITIVE SIM</span>
+            </div>
+            <div class="card-heading-row">
+              <h3 class="card-heading">Precision Apex Racers</h3>
+            </div>
+            <div class="card-subheading-row">
+              <p class="card-subheading">Laser-scanned asphalt circuits calibrated for direct-drive wheel bases and PSVR2 motion feedback.</p>
+            </div>
+            <div class="card-bottom">
+              <a class="btn btn-secondary btn-sm" href="vr-consoles.html">Hardware Specs</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="games-release-calendar">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">UPCOMING DROPS</p>
+            <h2>2026 Release Radar &amp; Hype Index</h2>
+          </div>
+          <p>Anticipated next-gen launches with community anticipation rankings and confirmed target specs.</p>
+        </div>
+        <div class="release-timeline">
+          <div class="timeline-row">
+            <span class="timeline-date">NOV 14</span>
+            <div class="timeline-title">
+              <strong>Starlight Vanguard</strong>
+              <span>Zero-G Tactical Flight Combat • Ray Traced Reflections</span>
+            </div>
+            <span class="timeline-platform">PS5 / PC</span>
+            <div class="hype-meter-wrap">
+              <div class="hype-label"><span>Community Hype</span><strong>94%</strong></div>
+              <div class="hype-bar"><div class="hype-fill" style="width: 94%;"></div></div>
+            </div>
+          </div>
+          <div class="timeline-row">
+            <span class="timeline-date">DEC 02</span>
+            <div class="timeline-title">
+              <strong>Abyssal Rift VR</strong>
+              <span>Deep Sea Bio-Luminescence Horror • Eye Tracked Audio</span>
+            </div>
+            <span class="timeline-platform">PSVR2 / PCVR</span>
+            <div class="hype-meter-wrap">
+              <div class="hype-label"><span>Community Hype</span><strong>97%</strong></div>
+              <div class="hype-bar"><div class="hype-fill" style="width: 97%;"></div></div>
+            </div>
+          </div>
+          <div class="timeline-row">
+            <span class="timeline-date">JAN 18</span>
+            <div class="timeline-title">
+              <strong>Chrono Horizon 2</strong>
+              <span>Temporal Mechanics JRPG • Native 4K 120Hz Ultra</span>
+            </div>
+            <span class="timeline-platform">PS5 Pro / PC</span>
+            <div class="hype-meter-wrap">
+              <div class="hype-label"><span>Community Hype</span><strong>91%</strong></div>
+              <div class="hype-bar"><div class="hype-fill" style="width: 91%;"></div></div>
+            </div>
+          </div>
+          <div class="timeline-row">
+            <span class="timeline-date">FEB 05</span>
+            <div class="timeline-title">
+              <strong>Hyperion Drift: Evolution</strong>
+              <span>Cyberpunk Anti-Gravity Racing • DualSense Adaptive Triggers</span>
+            </div>
+            <span class="timeline-platform">PS5 / PC / Quest 3</span>
+            <div class="hype-meter-wrap">
+              <div class="hype-label"><span>Community Hype</span><strong>89%</strong></div>
+              <div class="hype-bar"><div class="hype-fill" style="width: 89%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="spotlight-banner">
+        <div class="spotlight-copy">
+          <span class="spotlight-badge">FEATURED COMMUNITY SPOTLIGHT</span>
+          <h2>Into the Radius 2: The Next Frontier of VR Survival</h2>
+          <p>Explore desolate anomaly zones with realistic manual firearm manipulation, physical backpack management, and high-stakes tactical extraction co-op on PCVR &amp; Quest 3.</p>
+          <div class="spotlight-tags">
+            <span>🎮 Survival Sim</span>
+            <span>⚡ Unreal Engine 5</span>
+            <span>👓 90Hz Ultra Fidelity</span>
+            <span>⭐ 9.4 / 10 Score</span>
+          </div>
+          <div class="spotlight-actions" style="display: flex; gap: 14px; margin-top: 6px; flex-wrap: wrap;">
+            <a class="btn btn-primary" href="reviews.html">Read Verified Review</a>
+            <a class="btn btn-secondary" href="news.html">Developer Roadmap</a>
+          </div>
+        </div>
+        <div class="spotlight-visual">
+          <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Into the Radius 2 VR gameplay spotlight" loading="lazy">
+          <span class="spotlight-visual-badge">COMMUNITY PICK</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-main">
+      <div>
+        <a class="brand brand-footer" href="index.html" aria-label="VRGameZ home">
+          <img class="brand-logo brand-logo-footer" src="assets/logo.png" alt="VRGameZ">
+        </a>
+        <p>A next-gen gaming website concept combining VR &amp; console discovery, editorial news, reviews and helpful guides.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="games.html">Discover Games</a>
+        <a href="news.html">Gaming News</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="guides.html">Guides &amp; Videos</a>
+        <a href="vr-consoles.html">Consoles &amp; VR</a>
+      </div>
+      <div>
+        <h4>Contact &amp; Newsletter</h4>
+        <div class="footer-contact-details">
+          <p class="footer-contact-item"><strong>Direct:</strong> <a href="mailto:contact@vrgamez.io" class="footer-email-link">contact@vrgamez.io</a></p>
+          <p class="footer-contact-item"><strong>Press:</strong> <a href="mailto:press@vrgamez.io" class="footer-email-link">press@vrgamez.io</a></p>
+          <p class="footer-contact-item"><strong>Hotline:</strong> <a href="tel:+14158904263" class="footer-phone-link">+1 (415) 890-4263</a></p>
+          <p class="footer-contact-item"><strong>Studio:</strong> San Francisco, CA &bull; Mon&ndash;Fri 9AM&ndash;6PM EST</p>
+        </div>
+        <form class="footer-newsletter-bar">
+          <input class="footer-email-input" type="email" required placeholder="Enter player email" aria-label="Player email address">
+          <button class="btn btn-secondary btn-sm" type="submit">Join</button>
+        </form>
+        <span class="footer-newsletter-status" role="status"></span>
+      </div>
+      <div>
+        <h4>Social Channels</h4>
+        <div class="footer-social-row">
+          <a class="social-btn" href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
+            <span class="social-icon">🎮</span> Discord
+          </a>
+          <a class="social-btn" href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch VRGameZ on YouTube">
+            <span class="social-icon">▶</span> YouTube
+          </a>
+          <a class="social-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow VRGameZ on X">
+            <span class="social-icon">𝕏</span> X (Twitter)
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© 2026 VRGameZ — concept website</span>
+      <span>Original branding and high-definition photography</span>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
