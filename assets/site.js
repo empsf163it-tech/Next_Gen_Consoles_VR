@@ -113,3 +113,38 @@ document.querySelectorAll('.footer-newsletter-bar').forEach(form => {
     form.reset();
   });
 });
+
+// ================= Back to Top Functionality =================
+function initBackToTop() {
+  let btn = document.querySelector('#back-to-top');
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.id = 'back-to-top';
+    btn.className = 'back-to-top';
+    btn.setAttribute('aria-label', 'Back to top');
+    btn.setAttribute('title', 'Back to top');
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>';
+    document.body.appendChild(btn);
+  }
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  };
+
+  window.addEventListener('scroll', toggleVisibility, { passive: true });
+  toggleVisibility();
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+initBackToTop();
+

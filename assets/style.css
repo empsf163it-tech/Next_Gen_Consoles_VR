@@ -181,15 +181,14 @@ h1, h2, h3, h5, h6,
   text-align: center;
 }
 
-/* ================= Hero Section (Viewport Fitted) ================= */
+/* ================= Hero Section ================= */
 .hero {
-  min-height: calc(100vh - 80px);
-  min-height: calc(100dvh - 80px);
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px 0 32px;
+  padding: 36px 0 44px;
   box-sizing: border-box;
   width: 100%;
 }
@@ -202,8 +201,7 @@ h1, h2, h3, h5, h6,
 .hero-review-spotlight,
 .hero-video-playbook,
 .hero-ecosystem {
-  min-height: calc(100vh - 80px);
-  min-height: calc(100dvh - 80px);
+  min-height: auto;
   box-sizing: border-box;
 }
 
@@ -2052,6 +2050,9 @@ h1, h2, h3, h5, h6,
   flex-direction: column;
   gap: 14px;
   text-align: left;
+  height: 100%;
+  box-sizing: border-box;
+  min-width: 0;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -2882,6 +2883,9 @@ h1, h2, h3, h5, h6,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 .community-quote-card p {
   font-size: 14px;
@@ -3060,17 +3064,23 @@ h1, h2, h3, h5, h6,
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   margin-top: 24px;
+  align-items: stretch;
 }
 .tuning-step-card {
   background: #141e2b;
   border: 1px solid #28384d;
   border-radius: 8px;
-  padding: 20px 16px;
+  padding: 22px 18px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 .tuning-step-num {
   font-family: var(--display);
-  font-size: 14px;
+  font-size: 13px;
   color: var(--blue);
   margin-bottom: 8px;
   display: block;
@@ -3080,24 +3090,36 @@ h1, h2, h3, h5, h6,
   font-size: 15px;
   font-weight: 700;
   color: #fff;
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   text-align: left;
+  line-height: 1.35;
+  min-height: 22px;
 }
 .tuning-step-card p {
   font-size: 14px;
   color: #8c9eb2;
-  margin: 0 0 12px;
-  line-height: 1.5;
+  margin: 0 0 16px;
+  line-height: 1.55;
   text-align: left;
+  flex: 1 1 auto;
 }
 .tuning-param {
   font-family: var(--display);
-  font-size: 14px;
+  font-size: 13px;
   color: #39e58c;
   background: rgba(57, 229, 140, 0.1);
-  padding: 4px 8px;
+  padding: 0 10px;
+  height: 28px;
+  min-height: 28px;
+  max-height: 28px;
   border-radius: 4px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  align-self: flex-start;
+  margin-top: auto;
+  box-sizing: border-box;
 }
 
 /* --- NEW 7 (guides.html): Boss Fight Strategies & Weak Point Atlas (.guides-boss-atlas) --- */
@@ -3120,6 +3142,10 @@ h1, h2, h3, h5, h6,
   border-radius: 8px;
   padding: 22px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
 }
 .boss-tag-row {
   display: flex;
@@ -3148,10 +3174,12 @@ h1, h2, h3, h5, h6,
   margin: 0 0 14px;
   line-height: 1.6;
   text-align: left;
+  flex: 1 1 auto;
 }
 .phase-breakdown {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
   gap: 6px;
   border-top: 1px solid #222f40;
   padding-top: 12px;
@@ -3183,6 +3211,9 @@ h1, h2, h3, h5, h6,
   border-radius: 8px;
   padding: 22px;
   text-align: left;
+  height: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 .optic-tech-card h3 {
   font-family: var(--display);
@@ -3310,6 +3341,12 @@ h1, h2, h3, h5, h6,
   line-height: 1.65;
   text-align: left;
 }
+.deep-dive-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 /* --- NEW 11 (reviews.html): The Hall of Fame: Gold Awardees (.reviews-hall-of-fame) --- */
 .reviews-hall-of-fame {
@@ -3334,6 +3371,9 @@ h1, h2, h3, h5, h6,
   box-shadow: 0 12px 30px rgba(255, 194, 71, 0.15);
   display: flex;
   flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 .hall-fame-card img {
   height: 180px;
@@ -3385,17 +3425,74 @@ h1, h2, h3, h5, h6,
   .header-inner {
     gap: 15px;
   }
-  .hero {
-    gap: 28px;
-    min-height: calc(100vh - 80px);
-    min-height: calc(100dvh - 80px);
-    padding: 20px 0 28px;
+  .hero,
+  .home-hero,
+  .inner-hero,
+  .hero-portal,
+  .hero-bento,
+  .hero-editorial,
+  .hero-review-spotlight,
+  .hero-video-playbook,
+  .hero-ecosystem {
+    gap: 24px;
+    min-height: auto !important;
+    padding: 28px 0 34px !important;
+    justify-content: flex-start;
   }
   .hero-visual img {
-    height: clamp(260px, 38vh, 340px);
+    height: clamp(240px, 34vh, 320px);
+  }
+  .tuning-grid {
+    gap: 12px;
+    align-items: stretch;
+  }
+  .tuning-step-card {
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .tuning-step-card h3 {
+    font-size: 14px;
+    min-height: 22px;
+    margin: 0 0 8px;
+    line-height: 1.35;
+    display: block;
+  }
+  .tuning-step-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    flex: 1 1 auto;
+  }
+  .tuning-param {
+    font-size: 11px;
+    padding: 0 8px;
+    height: 26px;
+    min-height: 26px;
+    max-height: 26px;
+    white-space: nowrap;
+    letter-spacing: -0.2px;
+    margin-top: auto;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
   .content-grid {
     gap: 13px;
+  }
+  .news-magazine-grid,
+  .reviews-scorecard-grid,
+  .guides-masterclass-grid,
+  .hardware-arch-grid,
+  .community-reel-grid,
+  .hall-of-fame-grid,
+  .optics-columns,
+  .ecosystem-columns {
+    gap: 16px;
   }
 }
 
@@ -3428,11 +3525,17 @@ h1, h2, h3, h5, h6,
     border-bottom: 1px solid #253042;
     font-size: 14px;
   }
-  .hero {
-    min-height: calc(100vh - 72px);
-    min-height: calc(100dvh - 72px);
-    padding: 20px 0 24px;
-    align-content: center;
+  .hero,
+  .home-hero,
+  .inner-hero,
+  .hero-portal,
+  .hero-bento,
+  .hero-editorial,
+  .hero-review-spotlight,
+  .hero-video-playbook,
+  .hero-ecosystem {
+    min-height: auto !important;
+    padding: 20px 0 26px !important;
   }
   .hero-portal,
   .hero-bento,
@@ -3468,20 +3571,13 @@ h1, h2, h3, h5, h6,
   .editorial-card img {
     height: clamp(180px, 24vh, 240px);
   }
+  /* Even item grids (2 columns) */
   .feature-grid,
-  .content-grid,
   .games-catalog-grid,
-  .news-magazine-grid,
-  .reviews-scorecard-grid,
-  .guides-masterclass-grid,
-  .hardware-arch-grid,
   .hardware-radar-grid,
-  .community-reel-grid,
   .playlist-grid,
   .tuning-grid,
-  .optics-columns,
-  .battlestation-checklist-grid,
-  .hall-of-fame-grid {
+  .battlestation-checklist-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .deep-dive-card {
@@ -3505,11 +3601,69 @@ h1, h2, h3, h5, h6,
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  .ecosystem-columns {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .footer-main {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ================= Tab View 3-Card Centering (541px to 960px) ================= */
+@media (min-width: 541px) and (max-width: 960px) {
+  /* 3-card sections on tab view: 2 cards in Row 1, 3rd card in Centre on Row 2 */
+  .community-reel-grid,
+  .hall-of-fame-grid,
+  .content-grid.news-magazine-grid,
+  .news-magazine-grid,
+  .content-grid.reviews-scorecard-grid,
+  .reviews-scorecard-grid,
+  .content-grid.guides-masterclass-grid,
+  .guides-masterclass-grid,
+  .content-grid.hardware-arch-grid,
+  .hardware-arch-grid,
+  .optics-columns,
+  .ecosystem-columns,
+  .content-grid:has(> :nth-child(3):last-child) {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .community-reel-grid > :nth-child(1),
+  .hall-of-fame-grid > :nth-child(1),
+  .news-magazine-grid > :nth-child(1),
+  .reviews-scorecard-grid > :nth-child(1),
+  .guides-masterclass-grid > :nth-child(1),
+  .hardware-arch-grid > :nth-child(1),
+  .optics-columns > :nth-child(1),
+  .ecosystem-columns > :nth-child(1),
+  .content-grid:has(> :nth-child(3):last-child) > :nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .community-reel-grid > :nth-child(2),
+  .hall-of-fame-grid > :nth-child(2),
+  .news-magazine-grid > :nth-child(2),
+  .reviews-scorecard-grid > :nth-child(2),
+  .guides-masterclass-grid > :nth-child(2),
+  .hardware-arch-grid > :nth-child(2),
+  .optics-columns > :nth-child(2),
+  .ecosystem-columns > :nth-child(2),
+  .content-grid:has(> :nth-child(3):last-child) > :nth-child(2) {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
+
+  .community-reel-grid > :nth-child(3),
+  .hall-of-fame-grid > :nth-child(3),
+  .news-magazine-grid > :nth-child(3),
+  .reviews-scorecard-grid > :nth-child(3),
+  .guides-masterclass-grid > :nth-child(3),
+  .hardware-arch-grid > :nth-child(3),
+  .optics-columns > :nth-child(3),
+  .ecosystem-columns > :nth-child(3),
+  .content-grid:has(> :nth-child(3):last-child) > :nth-child(3),
+  .card-centered-tab {
+    grid-column: 2 / span 2 !important;
+    grid-row: 2 !important;
   }
 }
 
@@ -3520,11 +3674,18 @@ h1, h2, h3, h5, h6,
   .brand-logo {
     height: 38px;
   }
-  .hero {
-    min-height: calc(100vh - 72px);
-    min-height: calc(100dvh - 72px);
-    padding: 14px 0 18px;
-    gap: 12px;
+  .hero,
+  .home-hero,
+  .inner-hero,
+  .hero-portal,
+  .hero-bento,
+  .hero-editorial,
+  .hero-review-spotlight,
+  .hero-video-playbook,
+  .hero-ecosystem {
+    min-height: auto !important;
+    padding: 16px 0 20px !important;
+    gap: 14px;
   }
   .hero h1 {
     font-size: clamp(22px, 6vw, 28px);
@@ -3578,7 +3739,8 @@ h1, h2, h3, h5, h6,
   .news-wire-footer,
   .benchmark-actions,
   .troubleshoot-actions,
-  .ecosystem-actions {
+  .ecosystem-actions,
+  .deep-dive-actions {
     flex-direction: column;
     width: 100%;
     gap: 10px;
@@ -3588,9 +3750,12 @@ h1, h2, h3, h5, h6,
   .news-wire-footer .btn,
   .benchmark-actions .btn,
   .troubleshoot-actions .btn,
-  .ecosystem-actions .btn {
+  .ecosystem-actions .btn,
+  .deep-dive-actions .btn {
     width: 100%;
     text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
   .newsletter-bar {
     flex-direction: column;
@@ -3614,6 +3779,19 @@ h1, h2, h3, h5, h6,
   .battlestation-checklist-grid,
   .hall-of-fame-grid {
     grid-template-columns: 1fr;
+  }
+  .community-reel-grid > *,
+  .hall-of-fame-grid > *,
+  .news-magazine-grid > *,
+  .reviews-scorecard-grid > *,
+  .guides-masterclass-grid > *,
+  .hardware-arch-grid > *,
+  .optics-columns > *,
+  .ecosystem-columns > *,
+  .content-grid > *,
+  .card-centered-tab {
+    grid-column: auto !important;
+    grid-row: auto !important;
   }
   .leaderboard-row {
     grid-template-columns: 32px 1fr;
@@ -3691,3 +3869,68 @@ h1, h2, h3, h5, h6,
     text-align: right;
   }
 }
+
+/* ================= Back to Top Floating Button ================= */
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(18, 26, 38, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.5px solid var(--blue);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 10px rgba(101, 216, 237, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(16px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--blue);
+  color: #0b141e;
+  border-color: var(--blue);
+  box-shadow: 0 0 20px rgba(101, 216, 237, 0.6), 0 8px 24px rgba(0, 0, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.back-to-top:hover svg {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 540px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
